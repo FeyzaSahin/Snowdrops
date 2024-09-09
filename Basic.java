@@ -1,5 +1,5 @@
 package flowerGame;
-
+//just testing if i did cloning right
 import java.io.IOException;
 
 public class Basic extends Snowdrop{
