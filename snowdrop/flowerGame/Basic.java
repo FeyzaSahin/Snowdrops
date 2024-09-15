@@ -1,8 +1,13 @@
 package flowerGame;
 
 import java.io.IOException;
+import java.io.Serializable;
 
-public class Basic extends Snowdrop{
+public class Basic extends Snowdrop implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5003366959183080610L;
 	public static boolean[][] achieved = new boolean[mainColor.values().length][DecorC.values().length];
 	public static int[] colorCollectedBefore = new int[mainColor.values().length];
 	public static int[] decorCollectedBefore = new int[DecorC.values().length];

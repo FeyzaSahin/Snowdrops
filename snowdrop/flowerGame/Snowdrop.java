@@ -9,65 +9,104 @@ import javax.imageio.ImageIO;
 
 public class Snowdrop {
 	enum Species{
-		BASIC;
+		BASIC("BASIC", Basic.class);
+		
+		public final String name;
+		public final Class correspondingClass;
+		
+		private Species(String name, Class correspondingClass) {
+			this.name = name;
+			this.correspondingClass = correspondingClass;
+		}
+		
+		public static Species fromStringToSpecies(String input) {
+			for (Species s : Species.values()){
+				if (s.name.equalsIgnoreCase(input)) {
+					return s;
+				}
+			}
+			return null;
+		}
 	}
 	
 	enum mainColor{
-		BLACK(-16777216, 0),
-		BLOOD(-8388608, 1),
-		RED(-65536, 2),
-		INDIGO(-16777088, 3),
-		PLUM(-8388480, 4),
-		MAGENTA(-65408, 5),
-		LAPIS(-16776961, 6),
-		AMETHYST(-8388353, 7),
-		PINK(-65281, 8),
-		FOREST(-16744448, 9),
-		CLAY(-8355840, 10),
-		ORANGE(-32768, 11),
-		OCEAN(-16744320, 12),
-		GRAY(-8355712, 13),
-		CORA(-32640, 14),
-		BLUE(-16744193, 15),
-		LILAC(-8355585, 16),
-		DREAMCANDY(-32513, 17),
-		GREEN(-16711936, 18),
-		LIME(-8323328, 19),
-		YELLOW(-256, 20),
-		SPROUT(-16711808, 21),
-		SPRING(-8323200, 22),
-		SUNWARM(-128, 23),
-		CYAN(-16711681, 24),
-		ARCTIC(-8323073, 25),
-		WHITE(-1, 26),
-		SPECTER(855638015, 27);
+		BLACK("BLACK", -16777216, 0),
+		BLOOD("BLOOD", -8388608, 1),
+		RED("RED", -65536, 2),
+		INDIGO("INDIGO", -16777088, 3),
+		PLUM("PLUM", -8388480, 4),
+		MAGENTA("MAGENTA", -65408, 5),
+		LAPIS("LAPIS", -16776961, 6),
+		AMETHYST("AMETHYST", -8388353, 7),
+		PINK("PINK", -65281, 8),
+		FOREST("FOREST", -16744448, 9),
+		CLAY("CLAY", -8355840, 10),
+		ORANGE("ORANGE", -32768, 11),
+		OCEAN("OCEAN", -16744320, 12),
+		GRAY("GRAY", -8355712, 13),
+		CORA("CORA", -32640, 14),
+		BLUE("BLUE", -16744193, 15),
+		LILAC("LILAC", -8355585, 16),
+		DREAMCANDY("DREAMCANDY", -32513, 17),
+		GREEN("GREEN", -16711936, 18),
+		LIME("LIME", -8323328, 19),
+		YELLOW("YELLOW", -256, 20),
+		SPROUT("SPROUT", -16711808, 21),
+		SPRING("SPRING", -8323200, 22),
+		SUNWARM("SUNWARM", -128, 23),
+		CYAN("CYAN", -16711681, 24),
+		ARCTIC("ARCTIC", -8323073, 25),
+		WHITE("WHITE", -1, 26),
+		SPECTER("SPECTER", 855638015, 27);
 		
+		public final String name;
 		public final int rgbVal;
 		public final int index;
 		
-		private mainColor(int rgbVal, int index) {
+		private mainColor(String name, int rgbVal, int index) {
+			this.name = name;
 			this.rgbVal = rgbVal;
 			this.index = index;
+		}
+		
+		public static mainColor fromStringToMainColor(String input) {
+			for (mainColor s : mainColor.values()){
+				if (s.name.equalsIgnoreCase(input)) {
+					return s;
+				}
+			}
+			return null;
 		}
 	}
 
 	enum DecorC{
 		
-		TAR(-12566464, 0),
-		SCARLET(-4177856, 1),
-		LEAF(-12533696, 2),
-		NAVY(-12566336, 3),
-		HAY(-4145088, 4),
-		PURPLE(-4177728, 5),
-		MARINE(-12533568, 6),
-		SILVER(-4144960, 7);
+		TAR("TAR", -12566464, 0),
+		SCARLET("SCARLET", -4177856, 1),
+		LEAF("LEAF", -12533696, 2),
+		NAVY("NAVY", -12566336, 3),
+		HAY("HAY", -4145088, 4),
+		PURPLE("PURPLE", -4177728, 5),
+		MARINE("MARINE", -12533568, 6),
+		SILVER("SILVER", -4144960, 7);
 		
 		public final int rgbVal;
 		public final int index;
+		public final String name;
 		
-		private DecorC(int rgbVal, int index) {
+		private DecorC(String name, int rgbVal, int index) {
 			this.rgbVal = rgbVal;
 			this.index = index;
+			this.name = name;
+		}
+		
+		public static DecorC fromStringToDecor(String input) {
+			for (DecorC s : DecorC.values()){
+				if (s.name.equalsIgnoreCase(input)) {
+					return s;
+				}
+			}
+			return null;
 		}
 	}
 

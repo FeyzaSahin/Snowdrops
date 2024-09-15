@@ -1,8 +1,13 @@
 package flowerGame;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Habitat {
+public class Habitat implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7073721610831195784L;
 	private static int habitatCounter = 0;
 	private String name;
 	private int capacity;
