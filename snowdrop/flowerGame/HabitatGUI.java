@@ -59,7 +59,7 @@ public class HabitatGUI extends JFrame {
 					EventQueue.invokeLater(new Runnable() {
 						public void run() {
 							try {
-								FlowerGUI flowerGUI1 = new FlowerGUI(snowdrop, nursery);
+								FlowerGUI flowerGUI1 = new FlowerGUI(snowdrop);
 								flowerGUI1.setVisible(true);
 							} catch (Exception e) {
 								e.printStackTrace();

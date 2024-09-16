@@ -22,7 +22,7 @@ public class FlowerGUI extends JFrame {
 	 * Create the frame.
 	 * @throws IOException 
 	 */
-	public FlowerGUI(Snowdrop snowdrop, Habitat nursery) throws IOException {
+	public FlowerGUI(Snowdrop snowdrop) throws IOException {
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		addWindowListener(new java.awt.event.WindowAdapter() {
@@ -67,7 +67,7 @@ public class FlowerGUI extends JFrame {
 				EventQueue.invokeLater(new Runnable() {
 					public void run() {
 						try {
-							BreedingGUI frame = new BreedingGUI(snowdrop, nursery);
+							BreedingGUI frame = new BreedingGUI(snowdrop);
 							frame.setVisible(true);
 						} catch (Exception e) {
 							e.printStackTrace();

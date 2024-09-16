@@ -3,7 +3,6 @@ package flowerGame;
 import java.awt.EventQueue;
 
 import java.io.*;
-import java.io.FileInputStream;
 import java.util.Scanner;
 
 import flowerGame.Snowdrop.*;

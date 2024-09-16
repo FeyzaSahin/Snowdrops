@@ -14,7 +14,7 @@ public class NotificationGUI extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
-	public NotificationGUI(String message, Habitat nursery) {
+	public NotificationGUI(String message) {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent e) {
@@ -30,23 +30,6 @@ public class NotificationGUI extends JFrame {
 		
 		JLabel screen = new JLabel(message);
 		contentPane.add(screen);
-		
-		JButton button = new JButton("Go to nursery");
-		button.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				EventQueue.invokeLater(new Runnable() {
-					public void run() {
-						try {
-							HabitatGUI frame = new HabitatGUI(nursery, nursery);
-							frame.setVisible(true);
-						} catch (Exception e) {
-							e.printStackTrace();
-						}
-					}
-					});
-			}
-		});
-		contentPane.add(button);
 		
 		
 		JButton buttonmain = new JButton("OK");

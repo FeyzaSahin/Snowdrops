@@ -17,7 +17,7 @@ public class BreedingGUI extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public BreedingGUI(Snowdrop snowdrop, Habitat nursery) {
+	public BreedingGUI(Snowdrop snowdrop) {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent e) {
@@ -55,8 +55,8 @@ public class BreedingGUI extends JFrame {
 					EventQueue.invokeLater(new Runnable() {
 						public void run() {
 							try {
-								Snowdrop.breeding(otherflower, snowdrop, nursery);
-								NotificationGUI success = new NotificationGUI("Breeding successful", nursery);
+								Snowdrop.breeding(otherflower, snowdrop);
+								NotificationGUI success = new NotificationGUI("Breeding successful");
 								success.setVisible(true);
 							} catch (Exception e) {
 								e.printStackTrace();

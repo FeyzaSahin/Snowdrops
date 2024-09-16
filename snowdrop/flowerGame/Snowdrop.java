@@ -12,9 +12,10 @@ public class Snowdrop {
 		BASIC("BASIC", Basic.class);
 		
 		public final String name;
+		@SuppressWarnings("rawtypes")
 		public final Class correspondingClass;
 		
-		private Species(String name, Class correspondingClass) {
+		private Species(String name, @SuppressWarnings("rawtypes") Class correspondingClass) {
 			this.name = name;
 			this.correspondingClass = correspondingClass;
 		}
@@ -126,7 +127,7 @@ public class Snowdrop {
 		}
 		return snowdrops;
 	}
-	public static Snowdrop breeding(Snowdrop flower1, Snowdrop flower2, Habitat nursery) throws IOException { //plant breeding dynamic
+	public static Snowdrop breeding(Snowdrop flower1, Snowdrop flower2) throws IOException { //plant breeding dynamic
 		//idea for not immediately revealing the babies: create an unambiguous seed/sprout, wait for some time depending on species, then delete the seed/sprout and reveal the plant
 		boolean breedingPossible = (flower1.age == 1 && flower2.age == 1 && flower1 != flower2);
 		Logger.breedingEvent(flower1, flower2, breedingPossible);
@@ -152,7 +153,7 @@ public class Snowdrop {
 			}
 			switch (newTur) {
 			case BASIC:
-				return new Basic(flower1, flower2, newColor, newDecor, nursery);
+				return new Basic(flower1, flower2, newColor, newDecor, flower1.getHabitat());
 			}
 		} else {
 			System.out.println("These flowers cannot be breeded.");

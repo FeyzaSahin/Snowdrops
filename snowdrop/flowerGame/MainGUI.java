@@ -8,6 +8,10 @@ import javax.swing.border.EmptyBorder;
 
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.awt.event.ActionEvent;
 
 public class MainGUI extends JFrame {
@@ -24,6 +28,24 @@ public class MainGUI extends JFrame {
 		addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent e) {
                 Logger.closeLogger();
+                File file = new File("snowdrop\\flowerGame\\saveFile.csv");
+                try {
+					BufferedWriter writer = new BufferedWriter(new FileWriter(file));
+					writer.write("");
+					for (Habitat hab : Habitat.getHabitats()) {
+						writer.append("Habitat," + hab.getCapacity() + "," + hab.isNursery() + "," + hab.getName() + "\n");
+						for (Snowdrop sp : hab.getFlowers()) {
+							writer.append("Snowdrop," + sp.tur.name + "," + sp.getAge() + "," + sp.getColor() + "," + sp.decor + "\n");
+						}
+						for (int i = 0; i < hab.getCapacity() - hab.getPopulation(); i++) {
+							writer.append("None\n");
+						}
+					}
+					writer.close();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
             }
         });
 		setBounds(0, 0, 1450, 1300);
