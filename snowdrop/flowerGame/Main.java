@@ -4,7 +4,6 @@ import java.awt.EventQueue;
 
 import java.io.*;
 import java.util.Scanner;
-
 import flowerGame.Snowdrop.*;
 
 public class Main {

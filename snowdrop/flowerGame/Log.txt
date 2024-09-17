@@ -1,40 +1,35 @@
-There is a new nursery with the capacity of 8.
-There is a new 1.0 year old SUNWARM SCARLET BASIC in Nursery.
-There is a new 1.0 year old ARCTIC LEAF BASIC in Nursery.
-There is a new 1.0 year old PLUM NAVY BASIC in Nursery.
-There is a new 1.0 year old ORANGE MARINE BASIC in Nursery.
-ARCTIC LEAF BASIC and PLUM NAVY BASIC produced a new seed.
-ORANGE MARINE BASIC and PLUM NAVY BASIC produced a new seed.
-ORANGE MARINE BASIC and PLUM NAVY BASIC produced a new seed.
-ARCTIC LEAF BASIC and PLUM NAVY BASIC produced a new seed.
-ARCTIC LEAF BASIC and PLUM NAVY BASIC produced a new seed.
-There is a new nursery with the capacity of 8.
-There is a new 1.0 year old SUNWARM SCARLET BASIC in Nursery.
-There is a new 1.0 year old ARCTIC LEAF BASIC in Nursery.
-There is a new 1.0 year old PLUM NAVY BASIC in Nursery.
-There is a new 1.0 year old ORANGE MARINE BASIC in Nursery.
-ORANGE MARINE BASIC and ARCTIC LEAF BASIC produced a new seed.
-There is a new 0.0 year old ORANGE MARINE BASIC in Nursery.
-There is a new nursery with the capacity of 8.
-There is a new 1.0 year old SUNWARM SCARLET BASIC in Nursery.
-There is a new 1.0 year old ARCTIC LEAF BASIC in Nursery.
-There is a new 1.0 year old PLUM NAVY BASIC in Nursery.
-There is a new 1.0 year old ORANGE MARINE BASIC in Nursery.
-SUNWARM SCARLET BASIC and ARCTIC LEAF BASIC produced a new seed.
-There is a new 0.0 year old SUNWARM SCARLET BASIC in Nursery.
-There is a new nursery with the capacity of 8.
-There is a new 1.0 year old SUNWARM SCARLET BASIC in Nursery.
-There is a new 1.0 year old ARCTIC LEAF BASIC in Nursery.
-There is a new 1.0 year old PLUM NAVY BASIC in Nursery.
-There is a new 1.0 year old ORANGE MARINE BASIC in Nursery.
-There is a new 0.0 year old SUNWARM SCARLET BASIC in Nursery.
-There is a new nursery with the capacity of 8.
+2024-09-17 21:30:11: There is a new nursery with the capacity of 8.
 There is a new 1.0 year old SUNWARM SCARLET BASIC in Nursery.
 There is a new 1.0 year old ARCTIC LEAF BASIC in Nursery.
 There is a new 1.0 year old PLUM NAVY BASIC in Nursery.
 There is a new 0.30000000000000004 year old SUNWARM SCARLET BASIC in Nursery.
-There is a new nursery with the capacity of 8.
+2024-09-17 21:30:38 - There is a new nursery with the capacity of 8.
 There is a new 1.0 year old SUNWARM SCARLET BASIC in Nursery.
 There is a new 1.0 year old ARCTIC LEAF BASIC in Nursery.
 There is a new 1.0 year old PLUM NAVY BASIC in Nursery.
 There is a new 0.30000000000000004 year old SUNWARM SCARLET BASIC in Nursery.
+2024-09-17 21:32:29 - There is a new nursery with the capacity of 8.
+2024-09-17 21:32:29 - There is a new 1.0 year old SUNWARM SCARLET BASIC in Nursery.
+2024-09-17 21:32:29 - There is a new 1.0 year old ARCTIC LEAF BASIC in Nursery.
+2024-09-17 21:32:29 - There is a new 1.0 year old PLUM NAVY BASIC in Nursery.
+2024-09-17 21:32:29 - There is a new 0.30000000000000004 year old SUNWARM SCARLET BASIC in Nursery.
+2024-09-17 21:41:43 - There is a new nursery with the capacity of 8.
+2024-09-17 21:41:43 - There is a new 1.00 year old SUNWARM SCARLET BASIC in Nursery.
+2024-09-17 21:41:43 - There is a new 1.00 year old ARCTIC LEAF BASIC in Nursery.
+2024-09-17 21:41:43 - There is a new 1.00 year old PLUM NAVY BASIC in Nursery.
+2024-09-17 21:41:43 - There is a new 0.30 year old SUNWARM SCARLET BASIC in Nursery.
+2024-09-17 21:42:59 - There is a new nursery with the capacity of 8.
+2024-09-17 21:42:59 - There is a new 1.00 year old SUNWARM SCARLET BASIC in Nursery.
+2024-09-17 21:42:59 - There is a new 1.00 year old ARCTIC LEAF BASIC in Nursery.
+2024-09-17 21:42:59 - There is a new 1.00 year old PLUM NAVY BASIC in Nursery.
+2024-09-17 21:42:59 - There is a new 0.30 year old SUNWARM SCARLET BASIC in Nursery.
+2024-09-17 22:32:35 - There is a new nursery with the capacity of 8.
+2024-09-17 22:32:35 - There is a new 1.00 year old SUNWARM SCARLET BASIC in Nursery.
+2024-09-17 22:32:35 - There is a new 1.00 year old ARCTIC LEAF BASIC in Nursery.
+2024-09-17 22:32:35 - There is a new 1.00 year old PLUM NAVY BASIC in Nursery.
+2024-09-17 22:32:35 - There is a new 0.30 year old SUNWARM SCARLET BASIC in Nursery.
+2024-09-17 22:34:47 - There is a new nursery with the capacity of 8.
+2024-09-17 22:34:47 - There is a new 1.00 year old SUNWARM SCARLET BASIC in Nursery.
+2024-09-17 22:34:47 - There is a new 1.00 year old ARCTIC LEAF BASIC in Nursery.
+2024-09-17 22:34:47 - There is a new 1.00 year old PLUM NAVY BASIC in Nursery.
+2024-09-17 22:34:47 - There is a new 0.30 year old SUNWARM SCARLET BASIC in Nursery.

@@ -2,6 +2,8 @@ package flowerGame;
 
 import java.io.IOException;
 import java.io.Serializable;
+import java.time.Duration;
+import java.time.temporal.TemporalAmount;
 
 public class Basic extends Snowdrop implements Serializable{
 	/**
@@ -13,9 +15,11 @@ public class Basic extends Snowdrop implements Serializable{
 	public static int[] decorCollectedBefore = new int[DecorC.values().length];
 	public static int totalCollectedBefore = 0;
 	private static String imagePath = "snowdrop\\flowerGame\\Snowdrop.png";
+	private static Duration BasicTimeToMaturity = Duration.ofMinutes(3);
 	
 	public Basic(Snowdrop parent1, Snowdrop parent2, mainColor color, DecorC decor, Habitat habitat) throws IOException {
-		super(0.0, Species.BASIC, imagePath, color, decor, habitat);
+		super(0.0, Species.BASIC, imagePath, color, decor, habitat, BasicTimeToMaturity);
+		this.timeToMaturity = BasicTimeToMaturity;
 		if (!achieved[color.index][decor.index]) {
 			achieved[color.index][decor.index] = true;
 			
@@ -37,7 +41,7 @@ public class Basic extends Snowdrop implements Serializable{
 	}
 	
 	public Basic(double age, mainColor color, DecorC decor, Habitat habitat) throws IOException {
-		super(age, Species.BASIC, imagePath, color, decor, habitat);
+		super(age, Species.BASIC, imagePath, color, decor, habitat, BasicTimeToMaturity);
 		if (!achieved[color.index][decor.index]) {
 			achieved[color.index][decor.index] = true;
 			
@@ -62,4 +66,7 @@ public class Basic extends Snowdrop implements Serializable{
 		return imagePath;
 	}
 	
+	public static TemporalAmount getTurTimeToMaturity() {
+		return BasicTimeToMaturity;
+	}
 }

@@ -56,7 +56,7 @@ public class FlowerGUI extends JFrame {
 		nameDisplay.setBounds(750, 70, 1000, 20);
 		contentPane.add(nameDisplay);
 		
-		JLabel ageDisplay = new JLabel("Age: " + snowdrop.getAge());
+		JLabel ageDisplay = new JLabel("Age: " + String.format("%.2f", snowdrop.getAge()));//add time left until maturity
 		ageDisplay.setBounds(750, 100, 100, 20);
 		contentPane.add(ageDisplay);
 		

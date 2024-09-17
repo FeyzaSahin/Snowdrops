@@ -2,6 +2,9 @@ package flowerGame;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.temporal.TemporalAmount;
 import java.util.HashSet;
 import java.util.Random;
 
@@ -119,6 +122,8 @@ public class Snowdrop {
 	protected String name;
 	protected BufferedImage flowerImg;
 	protected String currentImagePath;
+	protected LocalDateTime creationTime;
+	protected TemporalAmount timeToMaturity;
 	
 	public static HashSet<Snowdrop> getCurrentFrogs() {
 		HashSet<Snowdrop> snowdrops = new HashSet<Snowdrop>();
@@ -162,7 +167,7 @@ public class Snowdrop {
 	}
 	
 	public Snowdrop(double age, Species tur, String currentImagePath,
-			mainColor color, DecorC decor, Habitat habitat) throws IOException {
+			mainColor color, DecorC decor, Habitat habitat, Duration timeToMaturity) throws IOException {
 		this.age = age;
 		this.tur = tur;
 		this.color = color;
@@ -171,6 +176,8 @@ public class Snowdrop {
 		habitat.addFlower(this);
 		this.name = color.name() + " " + decor.name() + " " + tur.name();
 		this.flowerImg = ImageIO.read(new File(currentImagePath));
+		this.creationTime = LocalDateTime.now();
+		this.timeToMaturity = timeToMaturity;
 		colorImage();
 		Logger.newFlower(this);
 	}
@@ -210,6 +217,7 @@ public class Snowdrop {
 			age += increment;
 		}
 	}
+	
 	public Species getTur() {
 		return tur;
 	}
@@ -222,5 +230,7 @@ public class Snowdrop {
 	public Habitat getHabitat() {
 		return habitat;
 	}
-	
+	public TemporalAmount getTimeToMaturity() {
+		return timeToMaturity;
+	}
 }

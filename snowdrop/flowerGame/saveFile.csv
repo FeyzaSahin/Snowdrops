@@ -1,9 +1,9 @@
-Habitat,8,TRUE,Nursery,
-Snowdrop,BASIC,1,SUNWARM,SCARLET
-Snowdrop,BASIC,1,ARCTIC,LEAF
-Snowdrop,BASIC,1,PLUM,NAVY
+Habitat,8,true,Nursery
+Snowdrop,BASIC,1.0,SUNWARM,SCARLET
+Snowdrop,BASIC,1.0,ARCTIC,LEAF
+Snowdrop,BASIC,1.0,PLUM,NAVY
 Snowdrop,BASIC,0.30000000000000004,SUNWARM,SCARLET
-None,,,,
-None,,,,
-None,,,,
-None,,,,
+None
+None
+None
+None
